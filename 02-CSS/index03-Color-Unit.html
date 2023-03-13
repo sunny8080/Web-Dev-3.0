@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <style>
+            .box {
+                height: 100px;
+                width: 200px;
+                border: 1px solid black;
+                margin: 10px;
+                padding: 25px;
+                box-sizing: border-box;
+            }
+
+            #org {
+                background-color: orange;
+            }
+
+            #wht {
+                background-color: wht;
+            }
+
+            #grn {
+                background-color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- box model : each element is in a rectangular form -->
+        <!-- content, width, height, padding, borders, margins -->
+        <!-- .box -->
+        <!-- margin : space b/w two div
+        padding : space b/w content of div and div borders
+        border : boundry of a element /or space b/w margin and padding -->
+        <div class="box" id="org">A</div>
+        <div class="box" id="wht">A</div>
+        <div class="box" id="grn">A</div>
+        <hr />
+
+        <!-- colors in css -->
+        <!-- hexadecimal colors -->
+        <p style="background-color: #8f2f4a">hexadecimal color</p>
+
+        <!-- rgb colors -->
+        <p style="background-color: rgb(0, 0, 255)">color</p>
+        <p style="background-color: rgb(30%, 20%, 50%)">color</p>
+        <p style="background-color: rgb(30%, 20%, 50%, 0.2)">color</p>
+
+        <!-- predefined or cross browser color names  -->
+        <p style="background-color: pink">color</p>
+
+        <!-- overflow -->
+        <div
+            style="
+                width: 300px;
+                height: 200px;
+                background-color: aqua;
+                overflow: scroll;
+            "
+        >
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Excepturi earum voluptatem pariatur maxime, nemo voluptatum
+                labore! Rerum ratione magni labore consequuntur perferendis
+                quasi, tenetur dolorem animi accusamus, temporibus sint dolorum
+                placeat et vitae veritatis qui? Eum, maxime repellat. Eaque,
+                ipsa repellendus. Amet alias veniam magni eos ipsum, eveniet
+                praesentium error architecto placeat repellendus corrupti libero
+                perspiciatis sed quas culpa consequuntur, expedita at eligendi
+                minus nemo laboriosam laborum. Maxime culpa aliquam explicabo
+                repellat numquam sunt beatae. Sint in placeat, nesciunt
+                excepturi blanditiis est adipisci ipsum mollitia temporibus
+                repellendus! Repellat magnam sed esse, rerum reprehenderit,
+                quasi deleniti omnis doloribus voluptates ut nulla?
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
+                accusamus!
+            </p>
+        </div>
+
+        <!-- units in css -->
+        <!-- pixel : two typesCSS pixel and Hardware pixels
+            css pixel = 1/96 inch -->
+        <!-- 1. Absolute unit (px fixed -> length = 1/96 inch) : 20px, 25px
+        2. Percentage unit (x%): 10% (10% of parent width)
+        3. Relative unit
+            a. Relative to font size 
+                (em) -> relative to parent font size (x em = x * parent_font_size px )
+                (rem) -> relative to root element size 
+            
+            b. Relative to Document or view port (rem -> relative to root size)
+                vw -> 1/100 * width_of_view_port
+                vh -> 1/100 * height_of_view_port
+        -->
+        <!-- default px size of <body> 16px -->
+        <div style="background-color: yellow; width: 500px; height: 50px">
+            <div style="background-color: green; width: 50%; height: 70%">
+                B
+            </div>
+        </div>
+
+        <!-- vw, vh -->
+        <p style="background-color: brown; width: 50vw; height: 20vh">
+            Hello Sunny
+        </p>
+
+        <!-- diffrerence b/w 50% and 50vw -->
+        <div style="background-color: yellow; width: 500px; height: 50px">
+            <div style="background-color: green; width: 50vw; height: 70%">
+                Basdf
+            </div>
+        </div>
+
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+    </body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <style>
+            .box1 {
+                border: 1px solid black;
+                height: 200px;
+                width: 150px;
+                /* default : Top to Bottom*/
+                background-image: linear-gradient(red, blue);
+                background-image: linear-gradient(to top, red, blue);
+                background-image: linear-gradient(to bottom, red, blue);
+                background-image: linear-gradient(to left, red, blue);
+                background-image: linear-gradient(to right, red, blue);
+                background-image: linear-gradient(to top right, red, blue);
+                background-image: linear-gradient(to top left, red, blue);
+                background-image: linear-gradient(to bottom right, red, blue);
+                background-image: linear-gradient(to bottom left, red, blue);
+                background-image: linear-gradient(
+                    to bottom left,
+                    red,
+                    blue,
+                    yellow
+                );
+                background-image: linear-gradient(90deg, red, blue, yellow);
+                background-image: linear-gradient(
+                    to bottom,
+                    rgba(255, 0, 0, 0),
+                    rgba(0, 0, 255, 1)
+                );
+            }
+
+            .box7 {
+                border: 1px solid black;
+                width: 300px;
+                height: 200px;
+                margin: 20px;
+                background-image: linear-gradient(
+                    orange 33%,
+                    white 66%,
+                    green 99%
+                );
+            }
+
+            .box2 {
+                border: 1px solid black;
+                width: 200px;
+                height: 300px;
+                margin: 10px;
+                background-image: radial-gradient(red, blue, aqua);
+                background-image: radial-gradient(circle, red, blue, aqua);
+                background-image: radial-gradient(
+                    square,
+                    red 10%,
+                    blue 20%,
+                    aqua 50%
+                );
+            }
+
+            .box3 {
+                border: 1px solid black;
+                width: 200px;
+                height: 200px;
+                margin: 20px;
+                background-image: conic-gradient(red, yellow, green);
+            }
+            .box4 {
+                border: 1px solid black;
+                width: 200px;
+                height: 200px;
+                margin: 20px;
+                background-image: conic-gradient(red, yellow, green);
+                background-image: conic-gradient(
+                    red 45deg,
+                    yellow 90deg,
+                    green 210deg
+                );
+                background-image: conic-gradient(
+                    from 90deg,
+                    red,
+                    yellow,
+                    green
+                );
+                background-image: conic-gradient(
+                    at 60% 70%,
+                    red,
+                    yellow,
+                    green
+                );
+                border-radius: 50%;
+            }
+
+            .box5 {
+                border: 1px solid black;
+                width: 200px;
+                height: 200px;
+                margin: 20px;
+                background-image: repeating-conic-gradient(red 10%, yellow 20%);
+                border-radius: 50%;
+            }
+
+            .box6 {
+                border: 1px solid black;
+                width: 200px;
+                height: 200px;
+                margin: 20px;
+                background-image: repeating-conic-gradient(
+                    red 0deg 10deg,
+                    yellow 10deg 20deg,
+                    blue 20deg 30deg
+                );
+                border-radius: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- css gradient -->
+        <!-- linear gradient -->
+        <div class="box1">This is a div</div>
+
+        <!-- radial div -->
+        <div class="box2">This is a div</div>
+        <div class="box7">This is a div</div>
+
+        <!-- conic gradient -->
+        <div class="box3">This is a div</div>
+        <div class="box4">This is a div</div>
+        <div class="box5">This is a div</div>
+        <div class="box6">This is a div</div>
+    </body>
+</html>

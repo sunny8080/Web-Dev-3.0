@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            h1 {
+                text-shadow: 3px 3px red;
+                text-shadow: 3px 3px 3px red;
+                /*horizon, vertical,  blur, spread-radius color*/
+                text-shadow: 3px 3px 3px red, -25px 6px 1px green;
+            }
+
+            .div1 {
+                background-color: aqua;
+                width: 200px;
+                height: 200px;
+                color: blue;
+                box-shadow: 10px 10px;
+                /* blue color shadow*/
+                box-shadow: 10px 10px red;
+                box-shadow: 10px 10px 10px red;
+                box-shadow: 10px 10px 15px red, 15px 15px 1px green;
+                margin-bottom: 30px;
+            }
+
+            .div2 {
+                background-color: yellow;
+                width: 200px;
+                height: 200px;
+                color: blue;
+                box-shadow: 10px 10px red, -10px -10px red, -10px 10px red,
+                    10px -10px red;
+                box-shadow: 10px 10px red, -10px -10px red inset, -10px 10px red,
+                    10px -10px red;
+                margin-bottom: 30px;
+            }
+
+            .div3 {
+                /*Box border from box-shadow*/
+                background-color: aqua;
+                width: 200px;
+                height: 200px;
+                color: blue;
+                box-shadow: 10px 10px 10px red;
+                box-shadow: 10px 10px 10px red inset;
+
+                /* offset-x | offset-y | blur-radius | spread-radius | color */
+                box-shadow: 0 5px 0 0 red;
+                /* Border bottom */
+                box-shadow: 0 -5px 0 0 red;
+                /* Border top */
+                box-shadow: -5px 0 0 0 red;
+                /* Border left */
+                box-shadow: 5px 0 0 0 red;
+                /* Border right */
+                box-shadow: 0 0 0 5px red;
+                /* All the borders by using the spread properties */
+                margin-bottom: 30px;
+            }
+
+            .box1 {
+                width: 400px;
+                max-height: 150px;
+                border: 1px solid yellow;
+                /* overflow: scroll;*/
+                margin-bottom: 150px;
+            }
+
+            .box2 {
+                width: 400px;
+                min-height: 150px;
+                border: 1px solid yellow;
+                /* overflow: scroll;*/
+                margin: 10px;
+            }
+            
+            .box3{
+                width: 400px;
+                height: 150px;
+                border: 1px dotted red;
+                margin: 10px;
+                overflow: visible;
+                overflow: hidden;
+                overflow:scroll;
+                overflow:auto;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- shadow effect : text shadow, box shadow -->
+        <!-- text shadow -->
+        <h1>This is h1</h1>
+        <!-- box shadow : text color will be shadow color-->
+        <div class="div1">Div 1</div>
+        <div class="div2">Div 2</div>
+        <div class="div3">Div 3</div>
+        <!-- css dimensions : width, height, min-height, max-height, min-width, max-width -->
+        <div class="box1">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <hr />
+
+        <div class="box2">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <!-- overflow property -->
+        <div class="box3">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A</p>
+        </div>
+
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+    </body>
+</html>

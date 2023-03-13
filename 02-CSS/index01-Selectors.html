@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            /* universal selector */
+            /*
+            * {
+                margin: 10px;
+            }
+            */
+            p,
+            h2 {
+                color: red;
+                font-size: larger;
+            }
+
+            /* Multiple selector */
+            table,
+            tr,
+            td,
+            th {
+                border: 5px solid black;
+            }
+
+            .green {
+                color: green;
+            }
+
+            .blue {
+                color: blue;
+            }
+            .smallFont {
+                font-size: small;
+            }
+            .largeFont {
+                font-size: large;
+            }
+
+            #first-button {
+                color: pink;
+            }
+            #intro-para {
+                background-color: aqua;
+            }
+
+            a:hover {
+                color: red;
+            }
+            .link-color:hover {
+                color: blue;
+            }
+            #link-id:hover {
+                color: yellow;
+            }
+
+            .div1 p {
+                background-color: yellow;
+            }
+
+            .div2 > p {
+                background-color: blue;
+            }
+
+            .div3 + p {
+                background-color: violet;
+            }
+
+            .div4 ~ p {
+                background-color: chartreuse;
+            }
+
+            a[target="_blank"] {
+                background-color: yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- element selector -->
+        <p>sdfsdhb</p>
+        <h4>sdfsdhb</h4>
+
+        <table cellspacing="10">
+            <tr>
+                <th>4654</th>
+                <th>asf</th>
+                <th>asf</th>
+            </tr>
+            <tr>
+                <th>4654</th>
+                <th>asf</th>
+                <th>asf</th>
+            </tr>
+        </table>
+
+        <!-- class selector -->
+        <p class="green">Abcd</p>
+        <p class="green">Abcd</p>
+        <p class="blue">Abcd</p>
+
+        <h1 class="smallFont green">Abcd</h1>
+        <h2 class="smallFont green">Abcd</h2>
+        <h3 class="smallFont green">Abcd</h3>
+        <h4 class="largeFont blue">Abcd</h4>
+        <h5 class="largeFont blue">Abcd</h5>
+        <h6 class="largeFont blue">Abcd</h6>
+
+        <!-- id selector -->
+        <button id="first-button">Submit</button>
+        <p id="intro-para">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa,
+            aut.
+        </p>
+
+        <!-- pseudo class selector -->
+        <a class="link-color" id="link-id" href="https://example.com"
+            >Go to example.com</a
+        >
+        <hr />
+
+        <!-- multiple  selector / grouping (table, th, td) -->
+        <!-- universal selector (*)  -->
+
+        <!-- nested selector 
+            There are four different combinators in CSS:
+                descendant selector (space)
+                child selector (>)
+                adjacent sibling selector (+)
+                general sibling selector (~)
+        -->
+
+        <!-- descendant selector (space) -->
+        <div class="div1">
+            <p>Abcd</p>
+            <p>sadf</p>
+            <section><p>Paragraph 3 in the div.</p></section>
+        </div>
+        <p>Not in a div</p>
+        <hr />
+
+        <!-- child selector (>) -->
+        <div class="div2">
+            <p>Abcd</p>
+            <p>sadf</p>
+            <section><p>Paragraph 3 in the div.</p></section>
+        </div>
+        <p>Not in a div</p>
+        <hr />
+
+        <!-- adjacent sibling selector (+)-->
+        <div class="div3">
+            <p>Paragraph 1 in the div.</p>
+            <p>Paragraph 2 in the div.</p>
+        </div>
+
+        <p>Paragraph 3. After a div.</p>
+        <p>Paragraph 4. After a div.</p>
+        <hr />
+
+        <!-- general sibling selector (~) -->
+        <div class="div4">
+            <p>para 1</p>
+            <p>para 2</p>
+        </div>
+        <p>para 3</p>
+        <section>
+            <p>para4</p>
+        </section>
+        <p>para 5</p>
+        <hr />
+        
+        <!-- attribute selector -->
+        <a href="https://www.w3schools.com">w3schools.com</a>
+        <a href="http://www.disney.com" target="_blank">disney.com</a>
+        <a href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
+        <hr />
+
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+    </body>
+</html>

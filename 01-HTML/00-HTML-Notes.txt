@@ -1,0 +1,36 @@
+HTML : Hyper Text Markup Language // Skeleton
+
+Tags :- 
+p - paragraph // block element
+h1 - h6 - heading
+img - image // empt tag or self closing tag -> src, width, height, alt
+a - link ref // inline element -> href, target
+ul - unordred list
+ol - ordered list
+li - list
+article - article
+em, strong - strong
+div - division
+br - vertical space
+hr - horizontal line
+blockquote - enclose a text with quotation // -> cite
+q - short quotation
+cite - citation or title in italicr
+abbr - abbreviation
+address 
+link
+dl - description list 
+section - section // define section in page
+nav - navigation links
+aside - show content on side of page
+
+main
+
+tabel, tr, td, th, thead, tbody, tfoot, 
+rowspan, colspan, colgroup,
+col -> span, style 
+
+figure, figurecaption - like img tag 
+
+article, aside, figure, figcaption, header, footer, main, nav // semantic tags - tags which provide meaning
+

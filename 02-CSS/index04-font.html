@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@600&display=swap"
+            rel="stylesheet"
+        />
+
+        <style>
+            .myclass {
+                background-color: red;
+            }
+
+            #myid {
+                background-color: blue;
+            }
+
+            section > p {
+                background-color: yellow !important;
+            }
+
+            .div1 {
+                font-family: myFirstFont;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Default Font</p>
+        <p style="font-family: Arial, Helvetica, sans-serif">
+            Default Font : font family 1
+        </p>
+
+        <p style="font-size: larger">font 2</p>
+        <p style="font-size: 25px">font 3</p>
+        <h1 style="font-weight: 100">font 4</h1>
+        <h1 style="font-weight: 800">font 5</h1>
+        <p style="font-style: italic">check font 5</p>
+        <p style="font-variant: small-caps">My font 6</p>
+
+        <!-- font : font-style, font-variant, font-weight, font-size/line-height, font-family  -->
+        <p style="font: italic normal 900 larger sans-serif">My Font 7</p>
+
+        <!-- ! important -> not a good practice -->
+        <section>
+            <p class="myclass" id="myid">This is some text in a paragraph.</p>
+        </section>
+
+        <!-- external font  -->
+        <p style="font-family: 'Golos Text', sans-serif">my font 8</p>
+    </body>
+</html>

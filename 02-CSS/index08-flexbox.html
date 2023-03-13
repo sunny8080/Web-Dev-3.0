@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            .container {
+                height: 400px;
+                border: 2px solid green;
+                display: flex;
+                /*
+                flex-direction: row;
+                flex-direction: row-reverse;
+                flex-direction: column;
+                flex-direction: column-reverse;
+                */
+
+                /*
+                flex-wrap: nowrap;
+                flex-wrap: wrap;
+                flex-wrap: wrap-reverse;
+                */
+
+                /*
+                flex-flow: row wrap;
+                */
+
+                /*justify-content : Alignment on main axis*/
+                /*
+                justify-content: flex-start;
+                justify-content: flex-end;
+                justify-content: center;
+                justify-content: space-around;
+                justify-content: space-evenly;
+                justify-content: space-between;
+                */
+
+                /*align-items : Alignment on cross axis*/
+                /*
+                align-items: flex-start;
+                align-items: flex-end;
+                align-items: center;
+                align-items: stretch;  
+                align-items: baseline;
+                */
+
+                /*
+                row-gap: 30px;
+                column-gap: 50px;
+                gap: 20px; 
+                */
+
+                /*align-content : handle the row spacing of flex-items  */
+                /*
+                align-items: center;
+                flex-wrap: wrap;
+                align-content: flex-start;
+                align-content: flex-end;
+                align-content: center;
+                align-content: space-around;
+                align-content: space-between;
+                align-content: space-evenly;
+                */
+            }
+            
+
+            .box {
+                border: 1px solid red;
+                background-color: yellow;
+                width: 050px;
+            }
+
+            .container2{
+                height: 400px;
+                border: 2px solid green;
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+
+            .box2 {
+                border: 1px solid rgb(74, 18, 215);
+                background-color: brown;
+                width: 250px;
+                justify-content: center;
+                /*flex-grow: 2;*/
+                /*flex-basis: 150px;*/
+                flex-basis: 50%;
+            }
+
+            #box12 {
+                order: 5;
+                /* flex-grow: 2; */
+                /* flex-shrink: 10;*/
+                /* flex: order flex-grow flex-shrink flex-basis */
+                /* flex: 5 1 10 150px; */
+                align-self: flex-end;
+            }
+            
+            #box13 {
+                order: 4; 
+                align-self: stretch;
+            }
+            #box15{
+                align-self: flex-start;
+            }
+
+        </style>
+    </head>
+    <body>
+        <!-- flex container properties -->
+        <div class="container">
+            <div class="box"><h1>box-1</h1></div>
+            <div class="box"><h2>box-2</h2></div>
+            <div class="box"><h3>box-3</h3></div>
+            <div class="box"><h4>box-4</h4></div>
+            <!-- 
+                <div class="box">box-5</div>
+                <div class="box">box-6</div>
+                <div class="box">box-7</div>
+                <div class="box">box-8</div>
+                <div class="box">box-9</div>
+                <div class="box">box-10</div>
+                <div class="box">box-11</div> 
+            -->
+        </div>
+        <hr />
+
+        <!-- flex item properties : order, flex-grow, flex-shrink, flex-basis, flex, align-self -->
+        <div class="container2">
+            <div class="box2" id="box12"><h1>box-12</h1></div>
+            <div class="box2" id="box13"><h2>box-13</h2></div>
+            <div class="box2" id="box14"><h3>box-14</h3></div>
+            <div class="box2" id="box15"><h4>box-15</h4></div>
+        </div>
+
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+    </body>
+</html>

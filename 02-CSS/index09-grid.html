@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <style>
+            .container {
+                background-color: brown;
+                height: 500px;
+                border: 3px solid black;
+                display: grid;
+
+                /* grid-template-columns: 200px 200px 200px; */
+                /* grid-template-columns: 1fr 1fr 1fr; */
+                grid-template-columns: 100px repeat(3, 1fr);
+                grid-template-rows: repeat(4, 1fr) 50px;
+                gap: 15px;
+                margin-bottom: 100px;
+            }
+
+            .box {
+                background-color: aqua;
+                border: 3px solid black;
+                /* width: 80px; */
+                /*height: 80px;*/
+            }
+
+            #box1 {
+                grid-column-start: 1;
+                grid-column-end: 3;
+            }
+
+            #box3 {
+                grid-row-start: 2;
+                grid-row-end: 4;
+            }
+
+            #box6 {
+                grid-row-start: 2;
+                grid-row-end: 5;
+                grid-column-start: 2;
+                grid-column-end: 4;
+            }
+
+            .container2 {
+                background-color: yellowgreen;
+                height: 500px;
+                border: 3px solid black;
+                display: grid;
+
+                grid-template-rows: 30px 1fr 30px;
+                grid-template-columns: 150px 1fr 150px;
+                gap: 5px;
+                margin-bottom: 100px;
+            }
+
+            #box21,
+            #box25 {
+                /*
+                grid-column-start: 1;
+                grid-column-end: 4;
+                */
+                grid-column: 1 / span 3;
+                grid-column: 1 / 4;
+            }
+
+            #box22,
+            #box23,
+            #box24 {
+                /*
+                grid-row-start: 2;
+                grid-row-end: 3;
+                */
+                grid-row: 2 / span 1;
+                grid-row: 2 / 3;
+            }
+
+            .container3 {
+                display: grid;
+                /* grid-template-columns: auto auto auto auto */
+                grid-template-columns: repeat(4, auto);
+                grid-gap: 10px;
+                background-color: #2196f3;
+                padding: 10px;
+            }
+
+            .container3 > div {
+                background-color: brown;
+                text-align: center;
+                padding: 20px 0;
+                font-size: 30px;
+            }
+
+            #box35 {
+                /* grid-area: 2 / 1 / span 2 / span 3 ;*/
+                grid-area: 2 / 1 / 4 / 4;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- flexbox is specific to positioning of content, grid is specific to layout creation -->
+        <!-- flexbox 1D, grid 2D -->
+        <!-- grid : https://www.w3schools.com/css/css_grid.asp -->
+
+        <!--
+        align-self: ;
+        place-items: ;
+        place-self: ;
+        justify-content: ;
+        justify-self: 
+        align-items: ;
+        align-content: ;
+        justify-self: ; 
+        -->
+
+        <div class="container">
+            <div class="box" id="box1">Box1</div>
+            <div class="box">Box2</div>
+            <div class="box" id="box3">Box3</div>
+            <div class="box">Box4</div>
+            <div class="box">Box5</div>
+            <div class="box" id="box6">Box6</div>
+            <div class="box">Box7</div>
+            <div class="box">Box8</div>
+            <div class="box">Box9</div>
+            <div class="box">Box10</div>
+        </div>
+
+        <div class="container2">
+            <div class="box" id="box21">Box21</div>
+            <div class="box" id="box22">Box22</div>
+            <div class="box" id="box23">Box23</div>
+            <div class="box" id="box24">Box24</div>
+            <div class="box" id="box25">Box25</div>
+        </div>
+
+        <!-- grid-area -->
+        <!-- https://www.w3schools.com/cssref/pr_grid-area.php -->
+        <div class="container3">
+            <div id="box31">Box31</div>
+            <div id="box32">Box32</div>
+            <div id="box33">Box33</div>
+            <div id="box34">Box34</div>
+            <div id="box35">Box35</div>
+            <div id="box36">Box36</div>
+            <div id="box37">Box37</div>
+        </div>
+    </body>
+</html>

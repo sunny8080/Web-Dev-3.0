@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <style>
+            div.box0 {
+                width: 200px;
+                height: 250px;
+                background-color: pink;
+            }
+
+            div.box1 {
+                width: 200px;
+                height: 250px;
+                background-color: aqua;
+                transform: translate(100px, 60px);
+                transform: translateX(100px), translateY(60px);
+                transform: rotate(15deg);
+                margin: 20px;
+            }
+
+            div.box2 {
+                background-color: yellow;
+                width: 200px;
+                margin: 200px;
+                transform: scale(2, 5);
+                transform: scale(2.5, 3.5);
+                transform: scaleX(2.5), scaleY(3.5);
+            }
+
+            div.box3 {
+                background-color: red;
+                width: 400px;
+                height: 200px;
+                margin: 200px;
+                transform: skew(15deg, -15deg);
+                transform: skewX(15deg);
+                transform: skewY(-30deg);
+            }
+
+            div.box4 {
+                background-color: rgb(49, 122, 218);
+                width: 200px;
+                height: 100px;
+                margin: 200px;
+                transform: matrix(1, 2, -1, 1, 80, 80);
+            }
+
+            .box {
+                width: 100px;
+                height: 100px;
+                background-color: yellow;
+                border: 1px solid red;
+                margin: 50px;
+            }
+
+            #translated {
+                transform: perspective(55px) translateZ(-30px);
+            }
+            #scaled {
+                transform: perspective(350px) scaleZ(4) rotateX(45deg) rotateY(15deg); 
+                transform: rotateZ(45deg);
+            }
+        </style>
+    </head>
+    <body>
+        <!-- css transform : tranlate(), scale(), skew(), matrix -->
+        <div class="box0">Box0</div>
+        <div class="box1">Box1</div>
+        <div class="box2">Box2</div>
+        <div class="box3">Box3</div>
+        <div class="box4">Box4</div>
+
+        <!-- 3d transform -->
+        <div class="box" id="static">static</div>
+        <div class="box" id="translated">translated</div>
+        <div class="box" id="scaled">scaled</div>
+    </body>
+</html>

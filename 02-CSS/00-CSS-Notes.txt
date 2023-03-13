@@ -1,0 +1,3 @@
+Selectors, element Selectors, class Selectors, id Selectors
+Pseudo class Selectors
+multiple Selectors

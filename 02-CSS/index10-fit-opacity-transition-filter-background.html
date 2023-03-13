@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <style>
+            #img1 {
+                width: 700px;
+                height: 300px;
+                margin: 50px;
+                object-fit: fill;
+                object-fit: none;
+                object-fit: contain;
+                object-fit: cover;
+            }
+
+            #div1 {
+                width: 200px;
+                height: 200px;
+                background-color: red;
+                transition: width 4s, height 1s, background-color 4s;
+            }
+
+            #div1:hover {
+                width: 500px;
+                height: 300px;
+                background-color: yellow;
+            }
+
+            #img3 {
+                width: 400px;
+                filter: grayscale(0%);
+                filter: grayscale(100%);
+                filter: blur(1px);
+                filter: brightness(50%);
+                filter: contrast(50%);
+                filter: drop-shadow(10px 20px);
+                filter: drop-shadow(10px 20px 8px gray);
+                filter: opacity(0.5);
+            }
+            #div2 {
+                background-image: conic-gradient(red, yellow, green);
+                background-image: url("./image/camera.jpg");
+                color: yellow;
+                width: 500px;
+                height: 500px;
+                background-color: aqua;
+            }
+
+            #div3 {
+                width: 500px;
+                height: 500px;
+                color: red;
+                background-image: url("./image/camera.jpg");
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- object fit -->
+        <img width="500px" src="https://rb.gy/ehjiio" alt="" />
+        <img id="img1" src="https://rb.gy/ehjiio" alt="" />
+
+        <!-- opacity -->
+        <div style="opacity: 0; font-size: 50px">Sunny</div>
+        <div style="opacity: 0.2; font-size: 50px">Sunny</div>
+        <div style="opacity: 0.6; font-size: 50px">Sunny</div>
+        <div style="opacity: 0.8; font-size: 50px">Sunny</div>
+        <div style="opacity: 1; font-size: 50px">Sunny</div>
+        <br />
+        <br />
+
+        <!-- transition -->
+        <!-- link :- https://www.w3schools.com/css/css3_transitions.asp -->
+        <div id="div1"></div>
+        <br />
+
+        <!-- filter -->
+        <!-- link : https://www.w3schools.com/cssref/css3_pr_filter.php -->
+        <img id="img3" src="https://rb.gy/ehjiio" alt="" />
+
+        <!-- background-img -->
+        <!-- img tag is used when image is the part of content and on printing, it
+        will get print by default whereas background-image tag is used when
+        image is not the part of content and on printing, it will not get print
+        by default. -->
+        <!-- https://www.w3schools.com/cssref/pr_background-image.php -->
+        <div id="div2"><h1>Hello Sunny</h1></div>
+
+        <!-- background-attachment,  background-repeat -->
+        <!-- https://www.w3schools.com/cssref/pr_background-attachment.php -->
+        <div id="div3">
+            <p>Hello</p>
+            <p>Hello</p>
+        </div>
+        <p>Hello</p>
+        <p>Hello</p>
+        <p>Hello</p>
+        <p>Hello</p>
+        <p>Hello</p>
+
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+    </body>
+</html>

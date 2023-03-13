@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <link rel="stylesheet" href="./css/styles2.css" />
+
+        <style>
+            #p1 {
+                color: red;
+            }
+
+            p {
+                color: blue;
+            }
+
+            .yellow-para {
+                color: yellow !important;
+            }
+
+            #green-para {
+                color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- inline css -->
+        <p style="font-style: italic">inline css</p>
+
+        <!-- internal css -->
+        <p id="p1">internal css</p>
+
+        <!-- external css -->
+        <p id="p2">external css</p>
+
+        <!-- specificity -->
+        <!-- tag selector, class selector, id selector, inline css, !important -->
+        <p class="yellow-para" id="green-para" style="color: aqua">
+            Lorem ipsum dolor sit amet.
+        </p>
+
+        <p></p>
+    </body>
+</html>

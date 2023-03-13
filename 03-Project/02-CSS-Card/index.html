@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Rubik:wght@800&display=swap"
+            rel="stylesheet"
+        />
+
+        <style>
+            .card {
+                width: 350px;
+                height: 350px;
+                background-color: white;
+                border: 2px solid black;
+                margin: 25px;
+                padding: 15px;
+                font-size: 22px;
+                font-family: "Rubik", sans-serif;
+            }
+
+            .template {
+                width: 350px;
+                border-radius: 3%;
+            }
+            .course-name {
+                margin: auto;
+            }
+            .price-cross {
+                text-decoration: line-through;
+                color: rgb(127, 131, 130);
+            }
+            .offer {
+                background-color: aqua;
+                padding: 8px;
+                border-radius: 9%;
+                color: white;
+            }
+            .price{
+                color: rgb(107, 105, 165);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="card">
+            <!-- <img class="template" src="codehelp.jpg" alt="" /> -->
+            <img class="template" src="https://codehelp.s3.ap-south-1.amazonaws.com/Web_Dev_670f900667.jpg" alt="" />
+            <p class="course-name">Web Development Master Course @dot Batch</p>
+            <p>
+                <span class="price">₹4500</span> &nbsp; <span class="price-cross">₹6999</span> &nbsp;
+                <span class="offer">42% off</span>
+            </p>
+        </div>
+    </body>
+</html>
