@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <style>
+            #para1 {
+                border: 2px solid black;
+                outline: #4caf50 solid 10px;
+                margin: auto;
+                padding: 20px;
+                text-align: center;
+            }
+
+            .pointer {
+                cursor: pointer;
+            }
+            .progress {
+                cursor: progress;
+            }
+
+            .para2 {
+                background-color: yellow;
+            }
+
+            @media (max-width: 900px) {
+                .para2 {
+                    background-color: brown;
+                }
+            }
+
+            @media (min-width: 1200px) {
+                .para2 {
+                    background-color: blue;
+                }
+            }
+
+            @media (max-width: 600px) and (min-width: 4000px) {
+                .para2 {
+                    background-color: pink;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <!-- outline -->
+        <!-- https://www.w3schools.com/css/css_outline.asp -->
+        <p id="para1">Sunny123</p>
+        <br />
+
+        <!-- cursor -->
+        <!-- https://www.w3schools.com/cssref/pr_class_cursor.php -->
+        <h3>Hover on text to see transition on cursor</h3>
+        <p class="pointer">pointer</p>
+        <p class="progress">progress</p>
+
+        <!-- media query -->
+        <!-- https://www.w3schools.com/css/css3_mediaqueries.asp -->
+        <p class="para2">Hello Sunny</p>
+    </body>
+</html>
