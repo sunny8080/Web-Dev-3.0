@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <style>
+            /* grid-template-areas */
+            .container {
+                height: 900px;
+                display: grid;
+                background-color: yellow;
+                border: 1px solid red;
+
+                /*
+                grid-template-rows: 30px 150px 400px 30px;
+                grid-template-columns: 400px;
+
+                grid-template-areas: 
+                "hd"
+                "side"
+                "main"
+                "ft";
+                */
+
+                /*
+                grid-template-rows: 30px 500px 30px;
+                grid-template-columns: 200px 400px;
+
+                grid-template-areas:
+                    "hd hd"
+                    "side main"
+                    "ft ft";
+                */
+
+                /*
+                grid-template-columns: 300px 300px 300px;
+                grid-template-rows: 100px 600px 150px;
+                grid-template-areas:
+                    "hd hd hd"
+                    "side main main"
+                    "ft ft ft";
+                */
+
+                grid-template-areas:
+                    "hd hd hd hd hd hd hd hd"
+                    "side side main main main main main main"
+                    "ft ft ft ft ft ft ft ft";
+            }
+
+            .box {
+                border: 1px solid green;
+                background-color: khaki;
+                /* height: 100px;
+                width: 100px; */
+            }
+
+            #header {
+                grid-area: hd;
+            }
+
+            #sidebar {
+                grid-area: side;
+            }
+
+            #content {
+                grid-area: main;
+            }
+
+            #footer {
+                grid-area: ft;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- grid-template-areas, grid-area -->
+        <div class="container">
+            <div class="box" id="header">Header</div>
+            <div class="box" id="sidebar">Sidebar</div>
+            <div class="box" id="content">Content</div>
+            <div class="box" id="footer">Footer</div>
+        </div>
+    </body>
+</html>

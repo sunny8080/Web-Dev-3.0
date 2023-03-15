@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.wrapper {
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.container {
+    margin: 0 10rem;
+}
+
+.heading {
+    margin: 1rem 0;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: repeat(3, auto);
+    font-size: 1.5rem;
+}
+
+.title {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+    font-size: 3rem;
+}
+
+.search {
+    padding: 4px;
+    width: 5rem;
+    background-color: aliceblue;
+    border: 1;
+    border-radius: 5px;
+}
+
+.search:hover {
+    width: 10rem;
+}
+
+.post {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-areas:
+        "intro right"
+        "heading right"
+        "subHeading1 right"
+        "subHeading2 right"
+        "goto goto";
+    margin-bottom: 1rem;
+}
+
+.right {
+    grid-area: right;
+    display: grid;
+    grid-auto-rows: auto;
+    /* grid-template-columns: 1fr; */
+    grid-template-areas:
+        "about"
+        "archives"
+        "else";
+    margin-left: 10rem;
+}
+
+.intro {
+    grid-area: intro;
+}
+
+.date {
+    opacity: 0.5;
+    margin-bottom: 2rem;
+    /* margin-right: 2rem; */
+}
+
+.author {
+    color: rgb(7, 155, 209);
+}
+
+.intro h2 {
+    font-family: serif;
+    font-size: 3rem;
+}
+
+.post-heading {
+    margin-top: 4rem;
+    grid-area: heading;
+}
+
+.post-heading h3 {
+    font-size: 2rem;
+    font-family: serif;
+}
+
+.subHeading1 {
+    grid-area: subHeading1;
+    margin-top: 2rem;
+}
+
+.subHeading1 h2,
+.subHeading2 h2 {
+    font-size: 1.5rem;
+    font-family: serif;
+}
+
+.subHeading2 {
+    grid-area: subHeading2;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.goto {
+    grid-area: goto;
+}
+
+.btn {
+    margin: 0 1rem;
+    padding: 0.3rem 2rem;
+    width: 9rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    padding-left: 0;
+    background-color: aquamarine;
+}
+
+.next {
+    padding-right: 0;
+    background-color: aqua;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.about {
+    grid-area: about;
+    background-color: rgb(246, 240, 232);
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.about h3,
+.archives h3,
+elsewhere h3 {
+    font-size: 2rem;
+}
+
+.archives {
+    grid-area: archives;
+    background-color: rgba(246, 240, 232, 0.8);
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.archives a,
+.elsewhere a {
+    color: rgba(7, 155, 209, 0.8);
+    display: block;
+}
+
+.elsewhere {
+    grid-area: else;
+    background-color: rgba(246, 240, 232, 0.5);
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}

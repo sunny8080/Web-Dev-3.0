@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.wrapper {
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.container {
+    margin: 0 10rem;
+}
+
+.heading {
+    margin: 1rem 0;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: repeat(3, auto);
+    font-size: 1.5rem;
+}
+
+.title {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+    font-size: 3rem;
+}
+
+.search {
+    padding: 4px;
+    width: 5rem;
+    background-color: aliceblue;
+    border: 1;
+    border-radius: 5px;
+}
+
+.search:hover {
+    width: 10rem;
+}
+
+.gallery {
+    display: grid;
+    justify-content: space-between;
+    align-content: space-evenly;
+    grid-template-columns: repeat(2, 0.48fr);
+}
+
+.card {
+    /* background-color: pink; */
+    margin: 1rem 0;
+    padding: 2rem;
+    box-shadow: 0 0 5px black;
+    /* border: 3px solid rgba(0, 0, 0, 0.5); */
+}
+
+.post-cat {
+    color: rgb(7, 155, 209);
+    margin-bottom: 0.5rem;
+}
+
+.post-title {
+    font-family: serif;
+}
+
+.date {
+    opacity: 0.5;
+    margin-bottom: 0.5rem;
+}
+
+.desc {
+    margin-bottom: 2rem;
+}
+
+.goto {
+    color: rgba(7, 155, 209, 0.8);
+}
