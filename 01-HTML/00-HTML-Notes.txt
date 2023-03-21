@@ -2,7 +2,7 @@ HTML : Hyper Text Markup Language // Skeleton
 
 Tags :- 
 p - paragraph // block element
-h1 - h6 - heading
+h1 - h6 - heading // h1 is larger and h6 is smaller
 img - image // empt tag or self closing tag -> src, width, height, alt
 a - link ref // inline element -> href, target
 ul - unordred list
@@ -15,7 +15,7 @@ br - vertical space
 hr - horizontal line
 blockquote - enclose a text with quotation // -> cite
 q - short quotation
-cite - citation or title in italicr
+cite - citation or title in italics
 abbr - abbreviation
 address 
 link

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+        * {
+            /* universal variable */
+            --dark-red: #981a2c;
+        }
+
+        :root {
+            /* root or global variable */
+            --myColor: #10c452;
+
+            --len: 100px;
+        }
+
+        .container {
+            border: 1px solid var(--dark-red);
+            background-color: green;
+            height: 500px;
+            width: 400px;
+
+            /*
+                Error : myColor2 is a local variable
+                background-color: var(--myColor2);
+                */
+        }
+
+        .box {
+            border: 2px dotted var(--myColor);
+
+            /* calc()  function */
+            height: calc(400px * 0.25);
+            width: calc(var(--len) * 2);
+
+            /* local variable */
+            --myColor2: #5510e0;
+
+            background-color: var(--myColor2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">Box1</div>
+        <div class="box">Box2</div>
+        <div class="box">Box3</div>
+        <div class="box">Box4</div>
+    </div>
+</body>
+
+</html>

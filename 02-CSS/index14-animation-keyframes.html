@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <style>
+            .container {
+                width: 100%;
+                height: 215px;
+                background-color: yellow;
+                border: 2px solid red;
+            }
+
+            .box {
+                width: 212px;
+                height: 212px;
+                border: 2px solid green;
+                background-color: aqua;
+
+                /*
+                animation-name: sunny;
+                animation-duration: 1s;
+                animation-timing-function: ease;
+                animation-delay: 0s;
+                animation-iteration-count: infinite;
+                animation-direction: reverse;
+                animation-fill-mode: backwards;
+                */
+
+                /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+                animation: sunny2 2s ease 0s 7 alternate forwards;
+
+                /*
+                animation-iteration-count: 5;
+                animation-iteration-count: infinite;
+
+                animation-timing-function: ease;
+                animation-timing-function: ease-in;
+                animation-timing-function: ease-out;
+                animation-timing-function: ease-in-out;
+                animation-timing-function: linear;
+                animation-timing-function:cubic-bezier(0.19, 1, 0.22, 1);
+                animation-timing-function:steps(5);
+                animation-timing-function:step-start;
+                animation-timing-function:step-end;
+
+
+                animation-direction: normal;
+                animation-direction: reverse;
+                animation-direction: alternate;
+                animation-direction: alternate-reverse;
+                
+                animation-fill-mode: backwards;
+                animation-fill-mode: forwards;
+                animation-fill-mode:both;
+                */
+            }
+
+            @keyframes sunny {
+                from {
+                    width: 200px;
+                }
+
+                to {
+                    width: 100%;
+                }
+            }
+
+            @keyframes sunny2 {
+                0% {
+                    width: 212px;
+                    background-color: orange;
+                }
+
+                50% {
+                    width: 35%;
+                    background-color: white;
+                }
+
+                100% {
+                    width: 100%;
+                    background-color: green;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <!-- animation and @keyframes -->
+        <!-- https://www.w3schools.com/css/css3_animations.asp -->
+        <div class="container">
+            <div class="box">BOX</div>
+        </div>
+    </body>
+</html>
