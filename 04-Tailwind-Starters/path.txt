@@ -1,0 +1,61 @@
+/* How to install tailwind in your project */
+go to :- https://tailwindcss.com/docs/installation
+node must be installed
+
+
+/* 1st way */  
+it is easiet way but we don't get hints about tailwind in this case
+add in header of index.html :-  <script src="https://cdn.tailwindcss.com"></script> 
+
+
+/* 2nd way :- */
+  i) Create a folder as root folder
+ ii) Run commands :-
+        a) npm install -D tailwindcss postcss autoprefixer vite
+        b) npx tailwindcss init -p 
+iii) Add * in content of tailwind.config.js
+ iv) Add script ("start": "vite") in scripts of package.json
+  v) Create main.css in root folder and add this lines:
+        @tailwind base;
+        @tailwind components;
+        @tailwind utilities;
+ vi) Link main.css with index.html
+
+
+```bash
+to install npm :- npm install
+to run npm :- npm run start
+```
+
+
+
+/* 3rd way */
+  i) Create a folder as root folder
+ ii) Run commands
+        a) npm init
+        b) npm i vite
+        c) npm install -D tailwindcss postcss autoprefixer
+        d) npx tailwindcss init
+iii) Create postcss.config.js
+ iv) Add this in postcss.config.js :-
+        module.exports = {
+            plugins: {
+                tailwindcss: {},
+                autoprefixer: {},
+            }
+        }
+  v) Add * in content of tailwind.config.js
+ vi) Add script ("start": "vite") in scripts of package.json
+vii) Create main.css in root folder and add this lines:
+        @tailwind base;
+        @tailwind components;
+        @tailwind utilities;
+viii) Link main.css with index.html
+
+
+```bash
+to install npm :- npm install
+to run npm :- npm run start
+```
+
+

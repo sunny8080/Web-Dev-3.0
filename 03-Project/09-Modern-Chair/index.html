@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Chair Page | Sunny</title>
+
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="container">
+        <div class="product">
+          <!-- info wrap or right part -->
+          <div class="info-wrap mob-margin"">
+            <p class="title-up">Modern Chair</p>
+            <h2 class="prd-name">Telford Kursi</h2>
+            <h4 class="price">$254 <span class="old-price">$530</span></h4>
+
+            <div class="desc-container">
+              <input class="desc-btn" id="desc-1" type="radio" name="desc-btn" checked />
+              <label for="desc-1">Description</label>
+
+              <input class="desc-btn" id="desc-2" type="radio" name="desc-btn" />
+              <label for="desc-2">Details</label>
+
+              <div class="desc-container desc-sec desc-sec-1">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id totam tempora enim officia veritatis hic.</p>
+              </div>
+
+              <div class="desc-container desc-sec desc-sec-2">
+                <div class="section-inline">
+                  <p><span>80</span>cm <br />Length</p>
+                </div>
+                <div class="section-inline">
+                  <p><span>65</span>cm <br />Width</p>
+                </div>
+                <div class="section-inline">
+                  <p><span>90</span>cm <br />Height</p>
+                </div>
+                <div class="section-inline">
+                  <p><span>17.6</span>lbs <br />Weight</p>
+                </div>
+              </div>
+            </div>
+            <h5 class="choose-color">Choose Color :</h5>
+          </div>
+
+          <!-- color btn section -->
+          <!-- Note :- we can't keep this section in a div 
+						becoz if we put these in a div then desc-container becomes it's sibling of parent, 
+						And for the trasition we can't select parent element
+					-->
+          <input class="color-btn color-btn-1" id="color-1" type="radio" name="color-btn" checked />
+          <label class="label-color-1" for="color-1"></label>
+
+          <input class="color-btn color-btn-2" id="color-2" type="radio" name="color-btn" />
+          <label class="label-color-2" for="color-2"></label>
+
+          <input class="color-btn color-btn-3" id="color-3" type="radio" name="color-btn" />
+          <label class="label-color-3" for="color-3"></label>
+
+          <input class="color-btn color-btn-4" id="color-4" type="radio" name="color-btn" />
+          <label class="label-color-4" for="color-4"></label>
+
+          <input class="color-btn color-btn-5" id="color-5" type="radio" name="color-btn" />
+          <label class="label-color-5" for="color-5"></label>
+
+          <input class="color-btn color-btn-6" id="color-6" type="radio" name="color-btn" />
+          <label class="label-color-6" for="color-6"></label>
+
+          <!-- add-to-cart button section -->
+          <div class="info-wrap">
+            <a class="btn" href="#">
+              <!-- not working -->
+              <i class="uil uil-shopping-cart icon"></i>
+              Add To Cart</a
+            >
+          </div>
+
+          <!-- chair image section -->
+          <section class="chair-img-container">
+						<div class="img-wrap chair-1"></div>
+            <div class="img-wrap chair-2"></div>
+            <div class="img-wrap chair-3"></div>
+            <div class="img-wrap chair-4"></div>
+            <div class="img-wrap chair-5"></div>
+            <div class="img-wrap chair-6"></div>
+          </section>
+					
+					<!-- background color section -->
+          <section class="back-color-container">
+            <div class="back-color chair-1"></div>
+            <div class="back-color chair-2"></div>
+            <div class="back-color chair-3"></div>
+            <div class="back-color chair-4"></div>
+            <div class="back-color chair-5"></div>
+            <div class="back-color chair-6"></div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
