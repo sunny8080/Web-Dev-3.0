@@ -7,3 +7,9 @@
 [submodule "03-Project/08-Sunny-Portfolio-Website"]
 	path = 03-Project/08-Sunny-Portfolio-Website
 	url = https://github.com/sunny8080/Sunny-Portfolio-Website
+[submodule "03-Project/01-Product-Card"]
+	path = 03-Project/01-Product-Card
+	url = https://github.com/sunny8080/Product-card
+[submodule "03-Project/03-Parallax-Effect"]
+	path = 03-Project/03-Parallax-Effect
+	url = https://github.com/sunny8080/Parallax-Effect
