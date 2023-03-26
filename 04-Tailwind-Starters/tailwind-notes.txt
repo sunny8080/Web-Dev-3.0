@@ -1,3 +1,11 @@
+tailwind - framework of css used to style css
+i.e. predefined class 
+
+
+
+
+
+
 /* How to install tailwind in your project */
 go to :- https://tailwindcss.com/docs/installation
 node must be installed
@@ -59,3 +67,25 @@ to run npm :- npm run start
 ```
 
 
+
+
+
+
+
+
+
+
+
+
+
+mix-blend-multiply
+group
+leading
+
+space
+bg
+mx
+
+
+General properties for button :- 
+bg-color, color, padding, margin, border-radius,font, font-bold, text-small, cursor-pointer, hover, tranition-all, duration
