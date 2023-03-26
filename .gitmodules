@@ -1,0 +1,3 @@
+[submodule "js-notes"]
+	path = js-notes
+	url = https://github.com/sunny8080/js-notes
