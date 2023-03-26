@@ -4,3 +4,6 @@
 [submodule "03-Project/10-RazorPay-Homepage-Clone"]
 	path = 03-Project/10-RazorPay-Homepage-Clone
 	url = https://github.com/sunny8080/Razorpay-clone
+[submodule "03-Project/08-Sunny-Portfolio-Website"]
+	path = 03-Project/08-Sunny-Portfolio-Website
+	url = https://github.com/sunny8080/Sunny-Portfolio-Website
