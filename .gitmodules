@@ -4,3 +4,6 @@
 [submodule "06-JavaTest"]
 	path = 06-JavaTest
 	url = https://github.com/sunny8080/js-notes
+[submodule "03-Project/10-RazorPay-Homepage-Clone"]
+	path = 03-Project/10-RazorPay-Homepage-Clone
+	url = https://github.com/sunny8080/Razorpay-clone
