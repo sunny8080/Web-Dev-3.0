@@ -1,3 +1,6 @@
 [submodule "05-JavaTest"]
 	path = 05-JavaTest
 	url = https://github.com/sunny8080/js-notes
+[submodule "06-JavaTest"]
+	path = 06-JavaTest
+	url = https://github.com/sunny8080/js-notes/tree/e45c30db021745681233c17237271c412313f565
