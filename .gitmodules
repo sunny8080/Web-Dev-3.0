@@ -1,9 +1,8 @@
-[submodule "05-JavaTest"]
-	path = 05-JavaTest
-	url = https://github.com/sunny8080/js-notes
-[submodule "06-JavaTest"]
-	path = 06-JavaTest
-	url = https://github.com/sunny8080/js-notes
+
+[submodule "03-Project/09-Modern-Chair"]
+	path = 03-Project/09-Modern-Chair
+	url = https://github.com/sunny8080/Sunny-Modern-Chair
+
 [submodule "03-Project/10-RazorPay-Homepage-Clone"]
 	path = 03-Project/10-RazorPay-Homepage-Clone
 	url = https://github.com/sunny8080/Razorpay-clone
