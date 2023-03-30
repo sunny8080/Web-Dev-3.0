@@ -13,3 +13,6 @@
 [submodule "03-Project/03-Parallax-Effect"]
 	path = 03-Project/03-Parallax-Effect
 	url = https://github.com/sunny8080/Parallax-Effect
+[submodule "03-Project/13-Password-Generator"]
+	path = 03-Project/13-Password-Generator
+	url = https://github.com/sunny8080/Password-Generator
