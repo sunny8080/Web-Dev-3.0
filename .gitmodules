@@ -19,3 +19,6 @@
 [submodule "03-Project/14-Weather-App"]
 	path = 03-Project/14-Weather-App
 	url = https://github.com/sunny8080/Weather-App
+[submodule "03-Project/15-Git-Detective"]
+	path = 03-Project/15-Git-Detective
+	url = https://github.com/sunny8080/Git-Detective
