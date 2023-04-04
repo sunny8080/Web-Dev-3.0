@@ -22,3 +22,6 @@
 [submodule "03-Project/15-Git-Detective"]
 	path = 03-Project/15-Git-Detective
 	url = https://github.com/sunny8080/Git-Detective
+[submodule "03-Project/16-Tic-Tac-Toe"]
+	path = 03-Project/16-Tic-Tac-Toe
+	url = https://github.com/sunny8080/Tic-Tac-Toe

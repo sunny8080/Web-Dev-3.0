@@ -207,3 +207,7 @@ clousure binds a function to its required data with references, and required dat
 closure is VVI for interview
 NOte : data / surrondign reference is binded, and not copy of data/surronding is binded
 it is game of reference and not copy
+
+
+## Destructuring assignment
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
