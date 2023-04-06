@@ -1,0 +1,45 @@
+.product-form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.product-form_controls div {
+    margin-top: 5px;
+}
+
+.product-form_controls div label {
+    display: inline-block;
+    width: 30%;
+    max-width: 150px;
+    text-align: right;
+    margin-right: 1rem;
+}
+.product-form_controls div input {
+    width: 45%;
+}
+
+input[type="date"] {
+    padding: 2px;
+}
+
+.btn-wrapper {
+    text-align: center;
+}
+
+.btn {
+    margin-top: 1rem;
+    margin-left: 2rem;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    border: 1px solid #40005d;
+    background-color: #40005d;
+    color: white;
+    border-radius: 12px;
+    margin-right: 1rem;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #510674;
+    border-color: #510674;
+}

@@ -16,6 +16,10 @@ after then react will be open at localhost:3000
 
 ## Remove files which will not be useable in project
 
+## Note :- Don't delete any file or content, it cause trouble in hosting
+
+this can be done when we don't want to host it online, Don't do it if you want to host it online
+
 1. from my-app/public remove delete all except index.html
 2. From my-app/src remove {setupTests.js, reportWebVitals.js, logo.svg, logo.svg, App.test.js,
    content of index.css and App.css, comments of index.js}
@@ -45,6 +49,19 @@ npm i tailwindcss // as a dependencies
 npm i tailwindcss -D // as a dev dependencies
 npm uninstall tailwindcss
 npm i
+
+then
+npx tailwindcss init
+then add {"./src/\*_/_.{js,jsx,ts,tsx}"} in tailwind.config.js
+then add {@tailwind base; @tailwind components; @tailwind utilities;} in index.css
+
+## Netlify page not found solution
+
+Add these lines to netlify.toml in root folder
+[[redirects]]
+from = "/\*"
+to = "/index.html"
+status = 200
 
 ## when a package version from ^ (^5.2.1) then this package will be updated, if available, on [npm i],
 
@@ -104,11 +121,11 @@ className :- in react js, className is used instead of class
 
     const [something, setSomething]  - setSomething function change state of something, and re-render somthing. It updates the screen after all the event handlers have run and have called their set functions. This prevents multiple re-renders during a single event (so there is scheduling).
 
-Calling the set function does not change the current state in the already executing code. It only affects what useState will return starting from the next render.
+Calling the set function does not change the current state in the already executing code. It only affects what useState will return starting from the next render. Because after changing the state variable is changed. So old variable still have old value. And after handler call new variables becomes old variable
 
 function handleClick() {
 setName('Robin');
-console.log(name); // Still "Taylor"!
+console.log(name); // Still "Taylor"! // old name, name is not updated yet
 }
 
 Must Read :- https://react.dev/reference/react/useState#avoiding-recreating-the-initial-state
@@ -119,8 +136,28 @@ Must Read :- https://react.dev/reference/react/useState#avoiding-recreating-the-
 
 Prop drilling is basically a situation when the same data is being sent at almost every level due to requirements in the final leve
 
-11. 
+11. Always use key attribute with map function
 
+## useEffect hook :- used to manage side effects
 
+if we want to do some task after rendering the component (task is called side effect ) => use useEffect
 
+side effect is a change that affect something outside the component being rendered
+(ex :- DOM update, API call, changing the document title, modifying state of parent component, modifying browser history)
 
+After render an component, userEffect hook will start executing for that component
+
+variation :-
+
+1. Every render :- useEffect(callback) => callback will execute for each render
+2. First Render :- useEffect(callback, []) => callback will execute once when element is rendered first
+3. First render + whenever depedency change :- useEffect(callback, [depedency_list]) => callback will execute only when any element in depedency_list will change
+4. to handle unmouting of a component (remove the old event listener) :- useEffect(callback{ ABC ; return callback2;}) :- first callback2 will execute then ABC will execute
+
+mount :- render krna
+unmount :- remove krna
+
+## class based component - life cycle methods (old things, similar to useEffect)
+
+component -> functino based compent , class based component
+life cycle methods -> componentsDidMount, componentsDidUpdate, componentsWillUnmount

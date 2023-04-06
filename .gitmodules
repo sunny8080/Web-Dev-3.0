@@ -25,3 +25,9 @@
 [submodule "03-Project/16-Tic-Tac-Toe"]
 	path = 03-Project/16-Tic-Tac-Toe
 	url = https://github.com/sunny8080/Tic-Tac-Toe
+[submodule "03-Project/18-visit-india-with-sunny"]
+	path = 03-Project/18-visit-india-with-sunny
+	url = https://github.com/sunny8080/Visit-India-With-Sunny
+[submodule "03-Project/19-top-courses"]
+	path = 03-Project/19-top-courses
+	url = https://github.com/sunny8080/Top-Courses
