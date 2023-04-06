@@ -31,3 +31,7 @@
 [submodule "03-Project/19-top-courses"]
 	path = 03-Project/19-top-courses
 	url = https://github.com/sunny8080/Top-Courses
+
+[submodule "03-Project/20-testimonial-slider"]
+	path = 03-Project/20-testimonial-slider
+	url = https://github.com/sunny8080/Testimonial-Slider
