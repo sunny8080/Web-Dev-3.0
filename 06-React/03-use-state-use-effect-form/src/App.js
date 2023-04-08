@@ -3,6 +3,7 @@ import Products from './components/Products'
 import NewProduct from './components/NewProduct'
 import CheckUseEffect from './components/CheckUseEffect'
 import { useState } from 'react';
+import Form from './components/Form';
 
 function App() {
   const initProducts = [
@@ -66,6 +67,14 @@ function App() {
         {/* useEffect */}
         <h1>useEffect hook</h1>
         <CheckUseEffect />
+      </div>
+
+
+      <div style={{ marginTop: "5rem", marginBottom: "5rem" }}>
+        {/* form using useState */}
+        <h1>Form</h1>
+        <Form></Form>
+
       </div>
     </div>
   );
