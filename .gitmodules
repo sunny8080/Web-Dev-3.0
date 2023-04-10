@@ -34,3 +34,6 @@
 [submodule "03-Project/20-testimonial-slider"]
 	path = 03-Project/20-testimonial-slider
 	url = https://github.com/sunny8080/Testimonial-Slider
+[submodule "03-Project/21-study-notion"]
+	path = 03-Project/21-study-notion
+	url = https://github.com/sunny8080/Study-Notion
