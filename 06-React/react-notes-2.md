@@ -64,12 +64,61 @@ The useSearchParams() hook is a built-in hook in the react-router-dom package th
 
 # useLocation hook : react-router-dom
 
-The useLocation () hook is a built-in hook in the react-router-dom package that allows you to access the current location in your React component. 
+The useLocation () hook is a built-in hook in the react-router-dom package that allows you to access the current location in your React component.
 The useLocation hook returns an object with the following properties:
+
 1. pathname : The current URL pathname (excluding the domain and query parameters).
 2. search : The query string in the current URL (including the "?" character).
 3. hash : The anchor portion of the current URL (including the "#" character).
 4. state : An optional state object that was passed to the current location ().
+
+# useReducer hook
+
+https://react.dev/learn/extracting-state-logic-into-a-reducer
+
+useReducer work same as useState, syntax are diff
+const [tasks, setTasks] = useState(initialTasks); // useState
+const [tasks, dispatch] = useReducer(tasksReducer, initialTasks); // useReducers
+const [state, dispatch] = useReducer((state, action)=>{...}, initialTasks); // useReducers general practice
+
+To convert from useState to useReducer:
+
+1. Dispatch actions from event handlers.
+2. Write a reducer function that returns the next state for a given state and action.
+3. Replace useState with useReducer.
+
+# useMemo hook
+
+useMemo is a React Hook that lets you cache the result of a calculation between re-renders.
+const cachedValue = useMemo(calculateValue, dependencies)
+https://react.dev/reference/react/useMemo#usememo
+https://youtu.be/-bEzt5ISACA
+
+# useCallback hook
+
+useCallback is a React Hook that lets you cache a function definition between re-renders.
+const cachedFn = useCallback(fn, dependencies)
+https://react.dev/reference/react/useCallback
+
+# memo
+
+memo lets you skip re-rendering a component when its props are unchanged.
+const MemoizedComponent = memo(SomeComponent, arePropsEqual?)
+https://react.dev/reference/react/memo
+
+# useRef hook
+
+useRef is a React Hook that lets you reference a value that’s not needed for rendering.
+https://react.dev/reference/react/useRef
+const ref = useRef(initialValue)
+
+You can mutate the ref.current property. Unlike state, it is mutable.
+When you change the ref.current property, React does not re-render your component. React is not aware of when you change it because a ref is a plain JavaScript object.
+Changing a ref does not trigger a re-render. This means refs are perfect for storing information that doesn’t affect the visual output of your component.
+By using a ref, you ensure that:
+1. You can store information between re-renders (unlike regular variables, which reset on every render).
+2. Changing it does not trigger a re-render (unlike state variables, which trigger a re-render).
+3. The information is local to each copy of your component (unlike the variables outside, which are shared).
 
 # npm pacakge used till now
 
@@ -90,6 +139,12 @@ custom-Hooks
 useContext
 useSearchParams
 useLocation
+useReducer
+useMemo
+useCallback
+useRef
+useSelector
+useDispatch
 
 # elements in react
 
@@ -97,3 +152,5 @@ useLocation
 <NavLink/>
 <Navigate>
 <> </> :- fragment
+
+# to ignore warning in netlify, change build command of netlify to - CI=false npm run build 

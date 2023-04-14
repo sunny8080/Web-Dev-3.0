@@ -1,7 +1,3 @@
-Git-Commands.md
-Web-Dev-1.0
-
-# for react 
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
@@ -25,6 +21,3 @@ Web-Dev-1.0
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-08-Backend-Basic
-

@@ -2,4 +2,5 @@
     "liveServer.settings.port": 5501,
     "livePreview.defaultPreviewPath": "/01-HTML/05-div-span.html",
     "git.ignoreLimitWarning": true,
+    "cSpell.language": "en",
 }

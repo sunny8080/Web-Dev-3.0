@@ -40,3 +40,6 @@
 [submodule "03-Project/23-sunny-blog-context-api"]
 	path = 03-Project/23-sunny-blog-context-api
 	url = https://github.com/sunny8080/Sunny-Blogs-Context-Api
+[submodule "03-Project/24-redux-shopping-cart"]
+	path = 03-Project/24-redux-shopping-cart
+	url = https://github.com/sunny8080/Ecomzy-Shopping
