@@ -6,6 +6,7 @@ Web-Dev-1.0
 
 # dependencies
 /node_modules
+**/node_modules
 /.pnp
 .pnp.js
 
@@ -26,5 +27,4 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-08-Backend-Basic
 

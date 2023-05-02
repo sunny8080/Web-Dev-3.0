@@ -43,3 +43,6 @@
 [submodule "03-Project/24-redux-shopping-cart"]
 	path = 03-Project/24-redux-shopping-cart
 	url = https://github.com/sunny8080/Ecomzy-Shopping
+[submodule "03-Project/25-dev-camper-api"]
+	path = 03-Project/25-dev-camper-api
+	url = https://github.com/sunny8080/Dev-Camper-Api
