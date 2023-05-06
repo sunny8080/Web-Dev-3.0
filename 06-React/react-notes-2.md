@@ -154,3 +154,7 @@ useDispatch
 <> </> :- fragment
 
 # to ignore warning in netlify, change build command of netlify to - CI=false npm run build 
+
+
+## useForm hook 
+https://react-hook-form.com/api/useform/

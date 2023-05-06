@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Sunny Kumar",
+    "email": "sunnyy45@gmail.com",
+    "role": "System Enginner",
+    "title": "Full Stack Developer",
+    "department": "Development"
+  },
+  {
+    "name": "Rahul Dua",
+    "email": "rahul@gmail.com",
+    "role": "CTO",
+    "title": "Database Management",
+    "department": "Production"
+  },
+  {
+    "name": "John Doe",
+    "email": "John@gmail.com",
+    "role": "Teacher",
+    "title": "English Teahcer",
+    "department": "Teaching"
+  },
+  {
+    "name": "Pawan Kumar",
+    "email": "pawan123@gmail.com",
+    "role": "Management",
+    "title": "HR Manager",
+    "department": "Lead"
+  },
+  {
+    "name": "Ryan Bolin",
+    "email": "ryan@gmail.com",
+    "role": "System Enginner",
+    "title": "Frontend Developer",
+    "department": "Delivery"
+  },
+  {
+    "name": "Sara Kensing",
+    "email": "sara@gmail.com",
+    "role": "Aplication Enginner",
+    "title": "Frontend Developer",
+    "department": "Design"
+  }
+]
