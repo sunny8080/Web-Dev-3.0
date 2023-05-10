@@ -9,7 +9,7 @@ console.log("Hello Sunny"); // Hello Sunny // used to print on the console windo
 {
     // primitive data types
     // Number String boolean undefined null bigint symbol
-    // in js float or double doesn't exist
+    // in js float or double doesn't exist - use Number for these
     let a1 = 10;
     let a2 = 10.2; // this is also a number variable
     let a3 = "Hello Sunny";
@@ -33,7 +33,7 @@ console.log("Hello Sunny"); // Hello Sunny // used to print on the console windo
     console.log("XYZ" + a1 + 10 + "ABCD"); // XYZ1010ABCD
     console.log(a5 + 10); // 11
 
-    console.log(a1 + 10); // 20.2
+    console.log(a1 + 10); // 20
     console.log(a1 + a2); // 20.2
     console.log(a1, a2); // 10 10.2
 
@@ -56,8 +56,8 @@ console.log("Hello Sunny"); // Hello Sunny // used to print on the console windo
     // console.log(a10); // Error, block level scope
     console.log(var1); // 456 // variable with var, will be alive till program end
 
-    // in js naming, camerCase is used
-    // let var = 5; // Js don't allow keyword as variable name
+    // in js naming, camelCase is used
+    // let var = 5; // Error // Js don't allow keyword as variable name
 }
 
 {
@@ -70,7 +70,7 @@ console.log("Hello Sunny"); // Hello Sunny // used to print on the console windo
 }
 
 {
-    // Referece types - Objects, Arrays, Function
+    // Reference types - Objects, Arrays, Function
 
     // Objects or object literals,
     let person = {
@@ -102,7 +102,7 @@ console.log("Hello Sunny"); // Hello Sunny // used to print on the console windo
 {
     // Operators : + - * / += -= *= /= % = typeof instanceof ++ --  **
     // > < >= <= == != (Loose equality) !== === (Strict equality)
-    // Loose quality (==) : to be true, only Value must be same, it doesn't check equality
+    // Loose quality (==) : to be true, only Value must be same, it doesn't check equality of data type
     // Strict quality (==) : to be true, Data type and Value must be same
     // Ternary operator : cond ? val1 : val2
     // AND OR NOT : && || !

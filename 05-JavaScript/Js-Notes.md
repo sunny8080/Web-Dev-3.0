@@ -28,14 +28,17 @@ document : an js object which contain all HTML codes
 ## Select a element
 
 let selectedEle = document.getElementById("idName")
+
+document.getElementById("idName")
 document.getElementsByClassName("className")
 document.getElementsByTagName(tag)
-$0 -> return previous selected element
 document.querySelector('#idName')
 document.querySelector('.className')
 document.querySelector('tag')
 document.querySelectorAll('.className')
 document.querySelectorAll('tag')
+
+$0 -> return previous selected element
 
 ## update existing content
 
@@ -47,7 +50,6 @@ document.querySelectorAll('tag')
 ## inserting new HTML element
 
 let newElement = document.createElement('tagName');
-selectedElement.appendChild(newElement) // add at the end
 selectedElement.appendChild(newElement) // add at the end
 
 ## create Text node
@@ -172,7 +174,7 @@ any async code handled by browser
 
 ### setTimeOut fun :- async
 
-setTimeOut(callback, mini_timout_time)
+setTimeOut(callback, mili_timout_time)
 
 hack : setTimeOut(callback, 0) :- callback will execute after call stack empty, and dont' execute on simultaneously // (wait time 0)
 
@@ -184,7 +186,7 @@ let p = new Promise(callback(resolve, reject){} ); // create new promise : to us
 Promise // check status (fulfilled, rejected, pending)
 then() and catch()
 multiple promise in parallel
-resole and reject a promise
+resolve and reject a promise
 promise chaining
 
 Async - await
@@ -208,6 +210,14 @@ closure is VVI for interview
 NOte : data / surrondign reference is binded, and not copy of data/surronding is binded
 it is game of reference and not copy
 
+## lexical scoping and closures
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures
 
 ## Destructuring assignment
+
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
+
+## Symbol primitive data type in JS
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol

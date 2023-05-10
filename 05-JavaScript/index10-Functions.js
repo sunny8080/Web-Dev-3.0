@@ -148,12 +148,9 @@
 }
 
 {
-}
-
-{
     // primitive data types vs reference data types
     // primitive are copied by their value
-    // Reference are copied by their address / refernce
+    // Reference are copied by their address / reference
     let a = 20;
     let b = a;
     a += 5;
@@ -182,6 +179,7 @@
 }
 
 {
+    // reference are passed by their reference
     let a = { val: 10 };
     function inc(a) {
         a.val += 5;

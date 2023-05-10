@@ -44,7 +44,7 @@
     console.log(box1.h); // undefined
 }
 
-// Object creation : Factory function, Constructor fun
+// Object creation : Factory function, Constructor fun, Class
 {
     // Factory function
     function createBox(len, bre) {

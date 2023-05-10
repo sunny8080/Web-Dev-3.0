@@ -55,12 +55,22 @@
     for (let x of arr1) {
         console.log(x); // 10 20 30
     }
+
+    // for-in in array
+    for (let key in arr1) {
+        console.log(key, arr1[key]); // 0 10, 1 20, 2 30
+    }
+
     console.log();
 
     let rect = {
         length: 10,
         breadth: 20,
     };
+
+    // for (let x of rect) { // Error
+    //     console.log(rect);
+    // }
 
     for (let key of Object.keys(rect)) {
         console.log(key, rect[key]); // length 10, breadth 20

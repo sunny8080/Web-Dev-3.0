@@ -82,6 +82,7 @@
         setTimeout(function () {
             console.log("I am insde Promise1");
         }, 5000);
+
         //resolve(1234567890);
         reject(new Error("Bhaisahab Error aaaye hai"));
     });
@@ -180,7 +181,8 @@
 }
 
 {
-    // await :- wait the promise for other promise
+    // async :  async keyword indicates that the function will return a promise
+    // await :- wait for promises to resolve before continuing execution
     /*
     async function utility() {
         let delhiMausam = new Promise((resolve, reject) => {

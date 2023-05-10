@@ -83,6 +83,10 @@
     arr1.forEach((x, ind) => {
         console.log(x);
     });
+
+    for (let key in arr1) {
+        console.log(key, [arr1[key]]);
+    }
 }
 
 {
@@ -161,7 +165,8 @@
     console.log(arr9);
     console.log();
 
-    // method chaining
+    // method chaining 
+    // filter method
     let nums = [10, 20, 30, -41, -45, 50];
     let items = nums
         .filter((x) => x >= 0)
@@ -189,9 +194,8 @@
     arr1.sort((a, b) => b - a);
     console.log(arr1);
 
-    let arr2 = arr1.keys();
     for (let x of arr1) console.log(x);
-    for (let x of arr2) console.log(x, arr1[x]);
+    for (let x of arr1.keys()) console.log(x, arr1[x]);
 
     console.log(arr1);
 
