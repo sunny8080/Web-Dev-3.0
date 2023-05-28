@@ -60,3 +60,15 @@ docgen - docgen windows exe name,
 Project.postman_collection.json - postman exported json
 
 ./docgen build -i Project.postman_collection.json -o ./index.html
+
+
+## Razorpay integration
+https://razorpay.com/docs/partners/aggregators/partner-auth/payment-gateway
+
+use orders api
+amount = amount*100
+webhook in razorpay
+
+
+## populate document and subdocument
+https://stackoverflow.com/questions/24414975/mongoose-populate-sub-sub-document
