@@ -49,9 +49,3 @@
 [submodule "03-Project/28-manage-users-api"]
 	path = 03-Project/28-manage-users-api
 	url = https://github.com/sunny8080/Manage-Users-API
-[submodule "03-Project/29-study-notion-mern/backend"]
-	path = 03-Project/29-study-notion-mern/backend
-	url = https://github.com/sunny8080/Study-Notion-Mern-Backend
-[submodule "03-Project/29-study-notion-mern/frontend"]
-	path = 03-Project/29-study-notion-mern/frontend
-	url = https://github.com/sunny8080/Study-Notion-Mern-Frontend
