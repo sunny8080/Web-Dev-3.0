@@ -52,3 +52,6 @@
 [submodule "03-Project/29-study-notion-mern"]
 	path = 03-Project/29-study-notion-mern
 	url = https://github.com/sunny8080/Study-Notion-Mern
+[submodule "09-AWS-programs"]
+	path = 09-AWS-programs
+	url = https://github.com/sunny8080/AWS-programs/

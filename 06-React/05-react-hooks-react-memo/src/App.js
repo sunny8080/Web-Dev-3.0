@@ -1,4 +1,3 @@
-import './App.css';
 import UseReducerEx from './components/UseReducerEx';
 import UseMemoEx from './components/UseMemoEx';
 import UseCallbackEx from './components/UseCallbackEx';
@@ -32,6 +31,10 @@ function App() {
       <div>
         <h1>useRef example</h1>
         <UseRefEx />
+      </div>
+
+      <div style={{ "marginBottom": "400px" }} >
+
       </div>
 
     </div>

@@ -2,13 +2,23 @@
 
 YT :- https://youtu.be/bbkBuqC1rU4
 
+## redux vs redux toolkit
+
+redux toolkit (or RTK) is a package (named - @reduxjs/toolkit) wraps around the core redux package and contains API methods and common dependencies that we think are essential for building a Redux app
+
+in redux we have to writes lots of codes, but in react toolkit we have to write lesser codes
+
 Like context api (useContext + useReducer) , it is also used in state management (to solve props drilling)
 
 ## store : A store that holds the state of your application. All global variable ( or state or slices ) is stored in store
 
+Store is like a pizza, where each slices represent a part/piece of store
+
+Ex- Store = {Auth data slice, User data slice, reviews data slices ...}
+
 ## action : An action that describes the changes in the state of the application.
 
-## reducer : A reducer which actually carries out the state transition depending on the action.
+## reducer (or functionality) : A reducer which actually carries out the state transition depending on the action.
 
 The state of your whole application is stored in an object tree within a single store.
 Maintain our application state in a single object which would be managed by the Redux store
@@ -59,10 +69,20 @@ so whenever we want to return state, we can mutate them (ie we can modify state 
 
 ## createAsyncThunk
 
-redux toolkit also provide a function createAsyncThunk() to fetch an url, it returns a promise
-to use. we cam using [pending, fulfilled, rejected] states by we can use extraReducers ( instead of reducers )
-to do some extra task or check state management in redux Devtools
+redux toolkit also provide a function createAsyncThunk() to fetch an url, it returns a promise to use.
+we can use [pending, fulfilled, rejected] states. By using these states, we can use extraReducers ( instead of reducers ) to do some extra task or check state management in redux Devtools
 
 ## Redux DevTools
 
 chrome extension to see state change in redux state
+
+## Redux data will be deleted, when we refresh browser tab
+In redux data is not persisted if window will be refreshed
+Solution -
+
+1.  use localStorage and store data in plain format
+2.  use localStorage and store data by encrypting it
+3.  use redux-persist package
+    https://www.npmjs.com/package/redux-persist
+    https://blog.logrocket.com/persist-state-redux-persist-redux-toolkit-react/#:~:text=With%20the%20Redux%20Persist%20library,state%20will%20still%20be%20preserved.
+4.  call api to set that data, on every page load (in <App>)

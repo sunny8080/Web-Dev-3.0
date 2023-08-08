@@ -61,14 +61,28 @@ Project.postman_collection.json - postman exported json
 
 ./docgen build -i Project.postman_collection.json -o ./index.html
 
-
 ## Razorpay integration
+
+to integrate we have to use orders API
+
+1. config razorpay 
+1. create razorpay instance
+2. create order
+3. note : send money in amount*100 (amount = amount*100)
+4. razorpay payment model will open, pay the money
+5. setup a webhook for successful transaction 
+6. it will it a route that verify signature
+
 https://razorpay.com/docs/partners/aggregators/partner-auth/payment-gateway
-
+https://razorpay.com/docs/api
+https://razorpay.com/integrations/
+https://dashboard.razorpay.com/app/dashboard
 use orders api
-amount = amount*100
-webhook in razorpay
 
+webhook in razorpay - a kind of notification of payment, it tells to hit a particular route (verify signature route) after successful payment
+capture and refund
+authorize state payment
 
 ## populate document and subdocument
+
 https://stackoverflow.com/questions/24414975/mongoose-populate-sub-sub-document

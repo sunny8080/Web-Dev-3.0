@@ -3,4 +3,7 @@
     "livePreview.defaultPreviewPath": "/01-HTML/05-div-span.html",
     "git.ignoreLimitWarning": true,
     "cSpell.language": "en",
+    "cSpell.words": [
+        "changepassword"
+    ],
 }
