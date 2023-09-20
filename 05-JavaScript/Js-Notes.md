@@ -221,3 +221,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Dest
 ## Symbol primitive data type in JS
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol
+
+## WebAPI
+FileReader
+FormData
