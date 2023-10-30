@@ -65,23 +65,31 @@ Project.postman_collection.json - postman exported json
 
 to integrate we have to use orders API
 
-1. config razorpay 
+1. config razorpay
 1. create razorpay instance
-2. create order
-3. note : send money in amount*100 (amount = amount*100)
-4. razorpay payment model will open, pay the money
-5. setup a webhook for successful transaction 
-6. it will it a route that verify signature
+1. create order
+1. note : send money in amount*100 (amount = amount*100)
+1. razorpay payment model will open, pay the money
+1. setup a webhook for successful transaction
+1. it will it a route that verify signature
 
-https://razorpay.com/docs/partners/aggregators/partner-auth/payment-gateway
+Go to Razorpay Documentation -
+
+https://razorpay.com/docs/partners/aggregators/
+https://razorpay.com/docs/partners/aggregators/partner-auth/
+https://razorpay.com/docs/partners/aggregators/partner-auth/payment-gateway/
+
 https://razorpay.com/docs/api
 https://razorpay.com/integrations/
 https://dashboard.razorpay.com/app/dashboard
+
 use orders api
 
 webhook in razorpay - a kind of notification of payment, it tells to hit a particular route (verify signature route) after successful payment
 capture and refund
 authorize state payment
+
+## Razorpay
 
 ## populate document and subdocument
 
