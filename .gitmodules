@@ -55,6 +55,6 @@
 [submodule "09-AWS-programs"]
 	path = 09-AWS-programs
 	url = https://github.com/sunny8080/AWS-programs/
-[submodule "03-Project/30-mcq-assessment-vuejs"]
-	path = 03-Project/30-mcq-assessment-vuejs
-	url = https://github.com/sunny8080/Mcq-Assessment-VueJS
+[submodule "03-Project/30-quiz-master-vuejs"]
+	path = 03-Project/30-quiz-master-vuejs
+	url = https://github.com/sunny8080/Quiz-Master-VueJs
