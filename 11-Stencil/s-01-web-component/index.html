@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        border: 2px solid orange;
+      }
+    </style>
+    <script src="./tooltip-shadow.js"></script>
+    <script src="./tooltip-template-slot.js"></script>
+    <script src="./tooltip-slot.js"></script>
+    <script src="./confirm-link.js"></script>
+  </head>
+  <body>
+    <h1>Introduction to web components</h1>
+    <div>Div element - This does not get the web component styles</div>
+    <hr />
+
+    <!-- Web component using Shadow DOM -->
+    <p>
+      <uc-tooltip-shadow>Web Components</uc-tooltip-shadow>
+      are awesome !
+    </p>
+
+    <p>
+      <uc-tooltip-shadow text="Custom Tooltip text">Web Components</uc-tooltip-shadow>
+      are awesome !
+    </p>
+
+    <hr />
+
+    <!-- //////////// template and slots /////////////////////////// -->
+
+    <template id="tooltip-template">
+      <slot>Default slot text</slot>
+      <span> ( ? ) </span>
+    </template>
+    <p>
+      <uc-tooltip-template-slot>Web Components</uc-tooltip-template-slot>
+      are awesome !
+    </p>
+
+    <p>
+      <uc-tooltip-template-slot></uc-tooltip-template-slot>
+      are awesome !
+    </p>
+    <hr />
+
+    <!-- //////////// slots /////////////////////////// -->
+
+    <p>
+      <uc-slot>Web Component standards</uc-slot>
+      are awesome !
+    </p>
+    <hr />
+
+    <!-- Extending built in tag - Custom anchor tag -->
+    <p>Extending built in tag</p>
+    <a is="uc-confirm-link" href="https://www.google.com/">Google</a>
+  </body>
+</html>

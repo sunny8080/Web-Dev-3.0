@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <title>Stencil Component Starter</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .side-nav ul {
+        list-style: none;
+      }
+
+      .side-nav li {
+        margin: 1rem 2rem;
+      }
+
+      .side-nav a {
+        text-decoration: none;
+        color: black;
+      }
+    </style>
+
+    <script type="module" src="/build/s-05-stencil-1.esm.js"></script>
+    <script nomodule src="/build/s-05-stencil-1.js"></script>
+  </head>
+  <body>
+    <my-component first="Stencil" last="'Don't call me a framework' JS"></my-component>
+    <hr />
+
+    <button class="side-bar-open-btn">Open Sidebar Menu</button>
+
+    <sk-side-drawer id="side-drawer" headerTitle="Menu">
+      <nav class="side-nav">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/">About</a></li>
+          <li><a href="/">Contact Us</a></li>
+        </ul>
+      </nav>
+    </sk-side-drawer>
+
+    <script>
+      const sideBarOpenBtn = document.querySelector('.side-bar-open-btn');
+      const sideDrawer = document.querySelector('sk-side-drawer');
+
+      sideBarOpenBtn.addEventListener('click', e => {
+        if (!sideDrawer.opened) {
+          // sideDrawer.opened = true;
+          sideDrawer.openDrawer();
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Modal</title>
+    <script src="./sk-modal.js"></script>
+
+    <style>
+       * {
+        box-sizing: border-box;
+      }
+
+      body{
+        margin: 2rem;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>My Custom Modal using Web Component</h1>
+    <hr>
+    <p>Please confirm your choices ?</p>
+    <button id="open-modal-btn">Show Details & Confirm</button>
+
+    <!-- Modal -->
+    <sk-modal id="payment-confirm-modal">
+      <h1 slot="title">Please Confirm</h1>
+      <p>You agree to pay the full due amount ??</p>
+    </sk-modal>
+
+    <script>
+      const openModalButton = document.querySelector('#open-modal-btn');
+      const modal = document.querySelector('#payment-confirm-modal');
+
+      openModalButton.addEventListener('click', () => {
+        // modal.setAttribute('opened', '');
+        if (!modal.isModalOpen) {
+          modal.openModal();
+          console.log('Modal opening');
+        }
+      });
+
+      modal.addEventListener('cancel', () => {
+        console.log('Cancelling Modal...');
+      });
+
+      modal.addEventListener('confirm', () => {
+        console.log('Confirming Modal ...');
+      });
+    </script>
+  </body>
+</html>
