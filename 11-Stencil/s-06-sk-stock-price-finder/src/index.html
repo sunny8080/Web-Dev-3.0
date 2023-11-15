@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <title>Stock Price Finder | Sunny8080</title>
+
+    <style>
+      html {
+        --color-primary: #3b013b;
+        --color-primary-inverse: white;
+        --color-primary-highlight: #750175;
+      }
+    </style>
+
+    <script type="module" src="/build/s-06-sk-stock-price-finder.esm.js"></script>
+    <script nomodule src="/build/s-06-sk-stock-price-finder.js"></script>
+  </head>
+  <body>
+    <my-component first="Stencil" last="'Don't call me a framework' JS"></my-component>
+
+    <!-- sk-stock-price component -->
+    <sk-stock-price stock-symbol="AAPL"></sk-stock-price>
+
+    <!-- sk-stock-finder component -->
+    <sk-stock-finder></sk-stock-finder>
+
+    <script>
+      // const skStockFinderEl = document.querySelector('sk-stock-finder');
+      // skStockFinderEl.addEventListener('skSymbolSelected', e => {
+      //   console.log(e);
+      // });
+    </script>
+  </body>
+</html>
