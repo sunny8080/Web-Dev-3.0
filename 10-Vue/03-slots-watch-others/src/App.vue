@@ -14,10 +14,14 @@
     <!-- <NamedSlot></NamedSlot>
     <hr> -->
 
-    <DynamicComponent></DynamicComponent>
-    <hr />
+    <!-- <DynamicComponent></DynamicComponent>
+    <hr /> -->
 
-    <TeleportElement></TeleportElement>
+    <!-- <TeleportElement></TeleportElement>
+    <hr> -->
+
+    <FormVue></FormVue>
+    <hr />
   </div>
 </template>
 
@@ -27,6 +31,7 @@
 <script>
 import DefaultSlot from "./components/DefaultSlot/DefaultSlot.vue";
 import DynamicComponent from "./components/DynamicComponent/DynamicComponent.vue";
+import FormVue from "./components/FormVue/FormVue.vue";
 import MyCounter from "./components/MethodsComputedWatch/MyCounter.vue";
 import NamedSlot from "./components/NamedSlot/NamedSlot.vue";
 import ScopedSlot from "./components/ScopedSlot/ScopedSlot.vue";
@@ -43,6 +48,7 @@ export default {
     NamedSlot,
     DynamicComponent,
     TeleportElement,
+    FormVue,
   },
 };
 </script>

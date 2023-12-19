@@ -18,7 +18,7 @@
 }
 
 {
-    // By using asign
+    // By using assign
     let obj1 = {
         a: 20,
         b: "Sunny",
@@ -43,7 +43,7 @@
 }
 
 {
-    // using spread
+    // spred operator - using spread
     let obj1 = {
         a: 20,
         b: "Sunny",
@@ -56,4 +56,15 @@
     console.log(obj1); //{ a: 50, b: 'Sunny' }
     console.log(obj2); // { a: 20, b: 'Sunny' }
     console.log();
+}
+
+{
+    // rest operator (...) - rest parameter must be last parameter
+    function filterEven(x, ...args) {
+        console.log(x);
+        // args will act like array which contains all remaining elements
+        return args.filter(x => x % 2 == 0)
+    }
+
+    console.log(filterEven(10, 20, 5, 7, 30)); // 10 \n [20, 30]
 }

@@ -143,8 +143,8 @@ console.log("Hello Sunny"); // Hello Sunny // used to print on the console windo
 {
     // scope
     // variable defined using let and const, have scope to the closest block
-    // variable defined using var, have scope to the closet function block if it is defined in a fun
-    // variable defined using var, have scope to the whole file if it is not defined in ant fun
+    // variable defined using var, have scope to the closest function block if it is defined in a fun
+    // variable defined using var, have scope to the whole file if it is not defined in an fun
 
     {
         let a = 10;

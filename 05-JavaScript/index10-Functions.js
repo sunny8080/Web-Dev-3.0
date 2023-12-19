@@ -42,10 +42,10 @@
     function sum(a, b) {
         return a + b;
     }
-    console.log(sum(5, 4));
+    console.log(sum(5, 4)); // 9
     console.log(sum(5)); // NaN
     console.log(sum()); // Nan
-    console.log(sum(5, 4, 1, 2, 3)); //
+    console.log(sum(5, 4, 1, 2, 3)); // 9
     console.log(sum("ab", "XYZ")); // abXYZ
     console.log();
 }
@@ -84,7 +84,7 @@
 }
 
 {
-    // Defualt parameter -> it must be last parameter in the inputs
+    // Default parameter -> it must be last parameter in the inputs
     function fun2(a, b, c = 0) {
         console.log(a, b, c);
     }
@@ -141,8 +141,8 @@
     console.log(sum1(10, 20)); // 30
     console.log(sum2(10, 20)); // 30
 
-    console.log(sum1.name); // sum
-    console.log(sum2.name); // sum
+    console.log(sum1.name); // sum1
+    console.log(sum2.name); // sum2
 
     console.log();
 }

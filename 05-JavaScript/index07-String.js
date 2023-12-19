@@ -9,7 +9,7 @@
 {
     let s1 = "Sunny";
     s1.toUpperCase();
-    console.log(s1);
+    console.log(s1); // Sunny
 
     console.log(s1.toUpperCase()); // SUNNY
     console.log();
@@ -58,13 +58,13 @@
 
 {
     // escape sequence
-    console.log('Ram\'s "sd" Brother');
+    console.log('Ram\'s "sd" Brother'); // Ram's "sd" Brother  
 
     // template literal
     let s1 = `Sunny
 Kumar
 Baranwal`;
-    console.log(s1);
+    console.log(s1); // Sunny \n Kumar \n Baranwal
     console.log();
 
     let myName = "Sunny";

@@ -12,7 +12,7 @@ class Tooltip extends HTMLElement {
     const tooltipIcon = document.createElement('span');
     tooltipIcon.textContent = " (?) ";
 
-    // Add span using dom
+    // Add span using normal or light dom
     // this.appendChild(tooltipIcon)
 
     // Add span using shadow dom

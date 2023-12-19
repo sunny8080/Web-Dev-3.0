@@ -1,5 +1,6 @@
-// mdn : //developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch
-https: {
+// mdn : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch
+
+{
     try {
         let d = 0;
         if (d == 0) {
