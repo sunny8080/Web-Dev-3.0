@@ -58,3 +58,6 @@
 [submodule "03-Project/30-quiz-master-vuejs"]
 	path = 03-Project/30-quiz-master-vuejs
 	url = https://github.com/sunny8080/Quiz-Master-VueJs
+[submodule "03-Project/31-Natours-Sass"]
+	path = 03-Project/31-Natours-Sass
+	url = https://github.com/sunny8080/Natours-Sass

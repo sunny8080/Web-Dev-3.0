@@ -1,12 +1,7 @@
-Git-Commands.md
-Web-Dev-1.0
-
-# for react 
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
 /node_modules
-**/node_modules
 /.pnp
 .pnp.js
 
@@ -26,11 +21,3 @@ Web-Dev-1.0
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-Cp_Study
-studynotion-edtech-project-main
-StudyNotion4 2
-studynotion8
-
-Private*
-04-todo-backend-ts
-node-05-finished
